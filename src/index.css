@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+a:focus-visible {
+  outline: 2px solid #24b08f;
+  outline-offset: 2px;
+}
+
+.range-track {
+  appearance: none;
+  height: 6px;
+  width: 100%;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #24b08f, #1f7460);
+}
+
+.range-track::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: white;
+  border: 2px solid #1f9076;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.2);
+}
+
+.range-track::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: white;
+  border: 2px solid #1f9076;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.2);
+}
